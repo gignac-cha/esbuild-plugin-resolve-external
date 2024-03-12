@@ -1,0 +1,38 @@
+{
+  "name": "esbuild-plugin-resolve-external",
+  "version": "0.0.1",
+  "description": "The plugin that resolves external packages for `esbuild`.",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build:plugin": "node build.mjs",
+    "build:types": "mkdir -p types && tsc --declaration --emitDeclarationOnly src/index.ts --outDir types",
+    "build": "npm run build:plugin && npm run build:types",
+    "test:jsdom": "ts-node test/build-for-jsdom/build.ts",
+    "test:react": "ts-node test/build-for-react/build.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "esbuild": "^0.20.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1",
+    "ts-node": "^10.9.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/jsdom": "^21.1.6",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.21",
+    "fast-xml-parser": "^4.3.5",
+    "jsdom": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
