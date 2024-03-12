@@ -11,9 +11,22 @@
     "test:jsdom": "ts-node test/build-for-jsdom/build.ts",
     "test:react": "ts-node test/build-for-react/build.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "esbuild",
+    "esbuild plugin",
+    "resolve",
+    "external",
+    "node_modules"
+  ],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gignac-cha/esbuild-plugin-resolve-external"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "peerDependencies": {
     "esbuild": "^0.20.1"
   },
