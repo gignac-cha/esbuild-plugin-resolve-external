@@ -84,7 +84,7 @@ importers:
         specifier: ^0.20.1
         version: 0.20.1
       esbuild-plugin-resolve-external:
-        specifier: link:../plugin
+        specifier: ^0.0.2
         version: link:../plugin
     devDependencies:
       '@emotion/react':

@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "esbuild": "^0.20.1",
-    "esbuild-plugin-resolve-external": "link:../plugin"
+    "esbuild-plugin-resolve-external": "^0.0.2"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.4",

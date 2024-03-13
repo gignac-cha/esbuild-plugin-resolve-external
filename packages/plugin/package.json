@@ -25,7 +25,7 @@
     "url": "git+https://github.com/gignac-cha/esbuild-plugin-resolve-external.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
     "esbuild": "^0.20.1"
