@@ -1,6 +1,6 @@
 import { build } from 'esbuild';
 import { rm } from 'fs/promises';
-import resolveExternalPlugin, { ExternalModule } from '../../src';
+import resolveExternal, { ExternalModule } from '../../src';
 
 Promise.resolve().then(async () => {
   const outdir = 'test/build-for-react/dist';
@@ -22,6 +22,6 @@ Promise.resolve().then(async () => {
     bundle: true,
     entryNames: '[name]',
     external,
-    plugins: [resolveExternalPlugin({ externalModules, logLevel: 'debug' })],
+    plugins: [resolveExternal({ externalModules, logLevel: 'debug' })],
   });
 });

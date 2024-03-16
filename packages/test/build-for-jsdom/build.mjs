@@ -1,5 +1,5 @@
 import { build } from 'esbuild';
-import { resolveExternalPlugin } from 'esbuild-plugin-resolve-external';
+import { resolveExternal } from 'esbuild-plugin-resolve-external';
 import { rm } from 'fs/promises';
 
 Promise.resolve().then(async () => {
@@ -23,6 +23,6 @@ Promise.resolve().then(async () => {
     bundle: true,
     entryNames: '[name]',
     external,
-    plugins: [resolveExternalPlugin({ externalModules, logLevel: 'debug' })],
+    plugins: [resolveExternal({ externalModules, logLevel: 'debug' })],
   });
 });

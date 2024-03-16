@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-resolve-external",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The plugin that resolves external packages for `esbuild`.",
   "main": "index.js",
   "types": "types/index.d.ts",

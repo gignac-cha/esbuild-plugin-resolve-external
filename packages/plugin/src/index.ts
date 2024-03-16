@@ -17,7 +17,7 @@ export interface ExternalModule {
 
 export const pluginName = 'resolve-external';
 
-export const resolveExternalPlugin = ({
+export const resolveExternal = ({
   externalModules = [],
   logLevel = logger.level,
 }: {
@@ -105,4 +105,4 @@ export const resolveExternalPlugin = ({
   },
 });
 
-export default resolveExternalPlugin;
+export default resolveExternal;

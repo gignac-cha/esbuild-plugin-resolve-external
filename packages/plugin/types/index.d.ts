@@ -11,8 +11,8 @@ export interface ExternalModule {
     nodeModulesPath?: string;
 }
 export declare const pluginName = "resolve-external";
-export declare const resolveExternalPlugin: ({ externalModules, logLevel, }: {
+export declare const resolveExternal: ({ externalModules, logLevel, }: {
     externalModules: ExternalModule[];
     logLevel?: LogLevel;
 }) => Plugin;
-export default resolveExternalPlugin;
+export default resolveExternal;
